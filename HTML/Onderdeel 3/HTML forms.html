@@ -71,6 +71,109 @@
 
     <!-- Vraag: 4. Een formulier kun je ook groeperen. Zie hieronder voor een voorbeeld: Bouw dit voorbeeld na.
         Antwoord:  Zie HTML sheet 'formulier' -->
+    
+    <!--Vraag: 5. Naast input element heb je ook een select element. Hiermee kan je een dropdown list maken. 
+        Maak een drop down list.
+        Antwoord: -->
+            <br>
+        <form>
+            <label for="Club">Kies de beste Club:</label>
+            <select name="Club" id="Club">
+                    <option value="Real Madrid">Real Madrid</option>
+                    <option value="Real Madrid">FC Barcelona</option>
+                    <option value="Real Madrid">Bayern Munchen</option>
+                    <option value="Real Madrid">Manchester City</option>
+            </select>
+        </form>
+
+    <!-- Vraag: 6. We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes maak. Dit zijn 3 verschillende manieren om 
+        de gebruiker een keuze te laten maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie waar je in kan 
+        gebruiken en leg dat uit?
+        Antwoord: Radio buttons gebruik je als de gebruiker van de webpage 1 optie wilt laten selecteren. Hierdoor krijg je één duidelijk
+        antwoord. Dit wordt vaak gebruikt bij het kiezen van geslacht van de gebruiker. Checkboxes gebruik je om meerdere opties te laten
+        kiezen, dus wanneer je gebruikers meerdere antwoorden laat geven. Een dropdown list laat je ook maar 1 keuze maken zoals de 
+        radiobutton, maar hier heb je veel meer keuzes. Het handige is dat al deze keuzes geen ruimte innemen op de pagina zoals de 
+        radiobutton.   -->
+    
+    <!-- Vraag: 7. Maak een reserveringsformulier om een sport te reserveren. In dit formulier willen we graag het volgende weten:
+        ● Naam van dat persoon
+        ● Off hij/zij lidmaatschap heeft
+        ● E-mail van dat persoon
+        ● Type sport om te reserveren. Keuze uit: tafeltennis, badminton of squash
+        ● Datum en tijdstip om te reserveren
+        ● Een checkbox waarbij de gebruiker akkoord gaat over de reserverings voorwaardes
+        ● Een submit knop
+        Antwoord: -->
+
+    <br>
+    <form
+        style="background-color: rgb(219, 217, 217); width: 750px;" >
+        <h3>Sport reservering</h3>
+        <br>
+        <label for="lname">Achternaam:</label>
+        <input type="text" id="lname" name="lname" value="achternaam"><br>
+        <br>
+        <label for="fname">Voornaam:</label>
+        <input type="text" id="fname" name="fname" value="voornaam"><br>
+        <br>
+        <label for="lid">Lidmaatschap:</label>
+        <input type="radio" name="lid" id="JA">
+        <label for="JA">JA</label>
+        <input type="radio" name="lid" id="NEE">
+        <label for="NEE">NEE</label><br>
+        <br>
+        <label for="email">Emailadres:</label>
+        <input type="email"><br>
+        <br>
+        <label for="sport">Type sport:</label>
+        <input type="radio" name="sport" id="Tafeltennis">
+        <label for="sport">Tafeltennis</label>
+        <input type="radio" name="sport" id="Badminton">
+        <label for="sport">Badminton</label>
+        <input type="radio" name="sport" id="Squash">
+        <label for="sport">Squash</label><br>
+        <br>
+        <label for="Datum">Datum</label>
+        <input type="date">
+        <label for="Tijd">Tijd</label>
+        <input type="time"><br>
+        <br>
+        <label for="akkoord">Akkoord reserveringsvoorwaarden</label>
+        <input type="checkbox" name="akkoord" id="Akkoord"><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    
+<!-- Vraag: 8. Maak een reserverings formulier om een boek te reserveren. In dit formulier willen we graag het volgende weten:
+            ● Naam van dat persoon
+            ● Telefoonnummer
+            ● E-mail van dat persoon
+            ● Naam van dat boek
+            ● Aantal boeken om te reserveren. Het aantal moet minimaal 1 en maximaal 5 zijn.
+            ● Een submit knop
+    Antwoord: -->
+
+    <form style="background-color: rgb(85, 224, 224); width: 750px;" >
+        <h3>Boekreservering</h3>
+        <br>
+        <label for="lname">Achternaam:</label>
+        <input type="text" id="lname" name="lname" value="achternaam"><br>
+        <br>
+        <label for="fname">Voornaam:</label>
+        <input type="text" id="fname" name="fname" value="voornaam"><br>
+        <br>
+        <label for="phone">Telefoonnummer</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="0612345678" required><br>
+
+
+
+
+
+
+
+
+
+    </form>
 
 
 </body>
