@@ -1,0 +1,11 @@
+p.a{margin: 100px;
+    border: solid 2px black;
+    padding: 10px;
+    }
+p.b{margin: 10px;
+        border: solid 2px black;
+        padding: 100px;}
+
+p.c{padding: 10px;
+    margin: 10px;
+    border: solid 10px red;}

@@ -1,2 +1,3 @@
-div > p {background-color:yellow;}
+div > p:first-child {background-color:yellow;}
 div + p {color: red;}
+div ~ p {color: green;}
