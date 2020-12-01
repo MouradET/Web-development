@@ -1,0 +1,21 @@
+img{width: 75%;}
+h1{background-color: yellow;
+    padding-left: 75px;
+    position: absolute;
+    bottom: 350px;
+    width: 1000px;}
+    
+p{background-color: rgb(216, 205, 205);
+    width: 500px;
+    padding-left: 25px;
+    position: absolute;
+    bottom: 300px;
+    left: 50px;
+    opacity: 0.75;}
+
+.geel{height: 40px;
+    width: 40px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 370px;
+    right: 347px;}

@@ -1,0 +1,9 @@
+.oranje{height: 100px;
+        width: 100px;
+        background-color: orange;}
+.groen{height: 50px;
+    width: 50px;
+    background-color: green;
+    position: relative;
+    top: -75px;
+    right: -25px}
