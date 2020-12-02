@@ -1,12 +1,29 @@
 button{color: white;
         font-size: xx-large;
         background-color: rgb(61, 204, 156);
-        padding: 25px 500px;
-        border: unset;
+        width: 500px;
+        height: 50px;
         position: relative;
+        border: none;
         }
-.button::before { content: "";
-    bottom:0;
-    border-left: 3px solid black;
-   
+
+button::before, button::after {
+        content:"";
+        position: absolute;
+        height: 90%;
+        width: 10%;  }
+
+button::before {
+        border-left: 5px solid tomato;
+        border-top: 5px solid tomato;
+        top: 0;
+        left: 0;
 }
+
+button::after {
+    border-right: 5px solid tomato;
+    border-bottom: 5px solid tomato;
+    right: 0;
+    bottom: 0;
+}
+
