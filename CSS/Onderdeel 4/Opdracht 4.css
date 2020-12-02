@@ -1,0 +1,12 @@
+button{color: white;
+        font-size: xx-large;
+        background-color: rgb(61, 204, 156);
+        padding: 25px 500px;
+        border: unset;
+        position: relative;
+        }
+.button::before { content: "";
+    bottom:0;
+    border-left: 3px solid black;
+   
+}
