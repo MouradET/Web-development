@@ -1,0 +1,13 @@
+p::after {
+    content: url(./smiley.png); width: 30px; height: 30px;
+  }
+h2::before {
+    content: url(./smiley.png)
+}
+h3::selection {color: red;
+                background-color: yellow;}
+h4::first-line {color: red;}
+h5::first-letter {color: blue;
+                    font-size: xx-large;}
+::placeholder {color: green;}
+ 
