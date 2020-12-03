@@ -1,19 +1,107 @@
-.star-six {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid red;
-    position: relative;
-  }
-  .star-six:after {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid red;
-    position: absolute;
-    content: "";
-    top: 30px;
-    left: -50px;
-  }
+.container{
+  display: flex;
+  flex-direction: row;}
+
+.cirkel1{ 
+  width: 100px;
+  height: 100px;
+  background: rgb(0, 0, 0);
+  border-radius: 100%;
+  position: relative;
+  left: 25px;}
+
+.cirkel1 p{
+  position: absolute;
+  color: white;
+  margin-left: 50px;
+  font-size: xx-large;}
+
+.cirkel1::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  right: 75px;}
+
+.cirkel1::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 75px;}
+
+.cirkel2{ 
+  width: 100px;
+  height: 100px;
+  background: rgb(0, 0, 0);
+  border-radius: 100%;
+  position: relative;
+  left: 100px;}
+  
+.cirkel2 p{
+  position: absolute;
+  color: white;
+  margin-left: 50px;
+  font-size: xx-large;}
+  
+.cirkel2::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  right: 75px;}
+  
+.cirkel2::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 75px;}
+
+.cirkel3{ 
+  width: 100px;
+  height: 100px;
+  background: rgb(0, 0, 0);
+  border-radius: 100%;
+  position: relative;
+  left: 175px;}
+    
+.cirkel3 p{
+  position: absolute;
+  color: white;
+  margin-left: 50px;
+  font-size: xx-large;}
+    
+.cirkel3::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  right: 75px;}
+    
+.cirkel3::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 75px;}
+  
+

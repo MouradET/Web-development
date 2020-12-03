@@ -1,0 +1,25 @@
+.ster{
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .ster::before,
+  .ster::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+  }
+  .ster::before {
+    transform: rotate(30deg);
+  }
+  .ster::after {
+    transform: rotate(60deg);
+  }
