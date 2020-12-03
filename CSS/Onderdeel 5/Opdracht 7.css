@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 300px;
+    margin-top: 50px;
+    align-items: center ;
+    background-color: rgb(236, 235, 144);}
+
+.een {height: 100%;
+        width: 25px;
+        margin-left: 20px;}
+
+.twee {height: 40%;
+        width: 25px;
+        margin-left: 5px;}
+
+.drie {height: 50%;
+        width: 25px;
+    margin-left: 5px;}
+
+.vier {height: 60%;
+        width: 25px;
+        margin-left: 5px;}
+
+.vijf {height: 25%;
+    width: 25px;
+    margin-left: 5px;}
+
+.zes {height: 30%;
+        width: 25px;
+        margin-left: 5px;}
