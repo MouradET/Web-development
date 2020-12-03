@@ -1,0 +1,26 @@
+.start div{
+    width: 100px;
+    height: 100px;
+    color: white;}
+
+.start {
+    display: flex;
+    justify-content: start;}
+
+.centre div{
+        width: 100px;
+        height: 100px;
+        color: white;}
+    
+.centre {
+        display: flex;
+        justify-content: center;}
+
+.end div{
+            width: 100px;
+            height: 100px;
+            color: white;}
+        
+.end {
+         display: flex;
+        justify-content: flex-end;}
