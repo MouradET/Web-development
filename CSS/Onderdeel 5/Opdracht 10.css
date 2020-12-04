@@ -1,3 +1,32 @@
+.container {display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: baseline;
+            background-color: white;
+            text-align: center;
+            margin-top: 50px;
+            background-color: thistle;}
+
+.rechts{width:50%;}
+
+p {padding-top: 100px;
+    padding-bottom: 130px;}
+
+
+
+button{background-color: teal;
+        color: black;
+        font-size: medium;
+        width: 304px;
+        height: 50px;
+        transition-duration: 0.4s;
+        cursor: pointer;}
+
+button:hover{background-color: white;
+        color: teal;
+        border: none;
+        font-size: larger;}
+
 @keyframes slideshow {
 	10% {left: 0;}
 	20% {left: 0;}
@@ -8,12 +37,9 @@
 	70% {left: -300%;}
 	80% {left: -300%;}
 	90% {left: -400%;}
-	100% {left: -400%}
-}
-
+	100% {left: -400%}}
 
 #slider{overflow:hidden;width:50%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
-#slider figure img{width:20%;float:left;}
-#slider figure{position:relative;width:500%;margin:0;left:0;text-align:left;animation:20s slideshow infinite}
-
+#slider figure img{width:20%;float:left; padding-bottom: 100px;}
+#slider figure{position:relative;width:500%;margin:0;left:0;text-align:left;animation:10s slideshow infinite}
 @media screen and (max-width: 767px) {#slider {overflow: hidden; width: 100%; margin: 0 auto;}}
