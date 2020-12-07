@@ -7,6 +7,7 @@ p:hover{color: red;}
             border: solid black 3px;
             background-color: pink;
             position: relative;
+            width: 1500px;
             left: 0px;}
 
 .container div{
@@ -17,7 +18,24 @@ p:hover{color: red;}
             line-height: 100px;
             font-size: xx-large;
             margin: 5px;
-            background-color: pink;}
+            background-color: pink;
+            position: relative;
+            transition: all 3s;}
+
+.container:hover div {
+            margin-left: 1395px;
+            background-color: red;}
+
+.container:hover .block1{border-radius: 50%;
+        transition-timing-function: default;}
+
+.container:hover .block2{border-radius: 25%;
+        transition-timing-function: ease-in-out;}
+
+.container:hover .block4{
+        transition-timing-function: ease-in-out;}
+
+
 
 
 
