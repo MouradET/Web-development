@@ -1,0 +1,37 @@
+.container {display: flex;
+            border: solid black 3px;
+            background-color: rgb(161, 161, 161);
+            position: relative;
+            width: 500px;
+            height: 500px;}
+
+.container div{
+            width: 50px;
+            height: 50px;
+            border: solid black 1px;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+            background-color: rgb(161, 161, 161);
+            transition: all 3s;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            right: 50%;
+            bottom: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);}
+
+.container:hover .block1{top: 0%;
+                            left: 0%;}
+
+.container:hover .block2{ float: right;
+                            top: 0%;}
+
+.container:hover .block3{top: 100%;
+                            left: 0%;}
+
+
+
+    
+
