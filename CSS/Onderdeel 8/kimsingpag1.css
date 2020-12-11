@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.sidebar {
+    width: 20%;
+    height: 1334px;
+    background-color: #4b86cb;
+    color: white;
+    /* text-align: center; */
+}
+
+#title-menu {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.sidebar ul li {
+    line-height: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.profiel{width: 35%;
+        background-image: url(./grey-hat-hacking.jpg);
+        height: 200px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        }
+
+#kimsing{border-radius: 50%;
+        display: block;
+        margin: auto;
+        margin-top: 100px;
+        border:  #4b86cb solid 3px;
+        }
+.info{text-align: center;
+        width: 200px;
+        display: block;
+        margin: auto;}
+
+
+
