@@ -1,8 +1,0 @@
-@import "./_variables.scss";
-
-.button{
-    width: 200px;
-    height: 100px;
-    background-color: $button-color;
-    &:hover{ background-color: $button-hover-color;}
-}

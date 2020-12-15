@@ -1,0 +1,18 @@
+@mixin important-text {
+    background-color: green;
+    color: red;
+    height: 100px;
+    width: 200px;
+    border: solid black 3px;   
+}
+
+.button {
+    @include important-text();
+    &:hover{ transition: all 3s;
+    background-color: blue;
+    color: white;
+    border: solid red 5px;
+    border-radius: 50%;
+    width: (1500px / 3px);
+    height: 500px;}
+}

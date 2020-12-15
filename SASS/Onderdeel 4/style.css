@@ -1,0 +1,19 @@
+.button {
+  background-color: green;
+  color: red;
+  height: 100px;
+  width: 200px;
+  border: solid black 3px;
+}
+
+.button:hover {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  background-color: blue;
+  color: white;
+  border: solid red 5px;
+  border-radius: 50%;
+  width: 500;
+  height: 500px;
+}
+/*# sourceMappingURL=style.css.map */
