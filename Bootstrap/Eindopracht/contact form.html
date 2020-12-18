@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-secondary">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav d-flex align-items-baseline">
+                    <li>
+                        <a class="nav-link h4 text-white" href="#">SuperStore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-secondary" href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-secondary" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <img src="./Techgrounds logo.png">
+        </nav>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="text-center">Please do not forget to buy an item!</div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <h2 class="text-center">TechGrounds x Shop</h2>
+        <form class="container" method="post" action="/">
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                <div class="col-sm-10 input-group-sm">
+                    <input type="name" class="form-control" id="name">
+                </div>
+            </div>
+<!-- emailadres -->
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email address:</label>
+                <div class="col-sm-10 input-group-sm">
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+<!-- message -->
+            <div class="form-group row">
+                <label for="message" class="col-sm-2 col-form-label">Message:</label>
+                <div class="col-sm-10 input-group-lg">
+                    <input type="message" class="form-control" id="message">
+                </div>
+            </div>
+<!-- radio buttons -->
+                <div class="form-group row">
+                <label for="message" class="col-sm-2 col-form-label">Support type:</label>
+                <div class="form-check col-sm-10 input-group-lg">
+                    <input class="form-check-input" type="radio" name="support_type" id="lost_item" value="lost_item">
+                    <label class="form-check-label" for="lost_item">Lost item</label>
+                  </div>
+
+                  <label for="message" class="col-sm-2 col-form-label"></label>
+                  <div class="form-check col-sm-10 input-group-lg">
+                    <input class="form-check-input" type="radio" name="support_type" id="help_order" value="help_order">
+                    <label class="form-check-label" for="help_order">Help making an order</label>
+                  </div>
+
+                  <label for="message" class="col-sm-2 col-form-label"></label>
+                  <div class="form-check col-sm-10 input-group-lg">
+                    <input class="form-check-input" type="radio" name="support_type" id="track_info" value="track_info">
+                    <label class="form-check-label" for="track_info">Tracking information</label>
+                  </div>
+                </div>
+<!-- submit button -->
+            <button type="submit" class="btn btn-default bg-primary text-white">Send</button>
+<!--Google maps -->
+    <p></p>
+                <div class=" map-container">
+                    <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.6291042791063!2d4.804532715801461!3d52.35901187978395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e39f61f5149f%3A0xae753d6c3373091c!2sTechGrounds!5e0!3m2!1snl!2snl!4v1608303484174!5m2!1snl!2snl" 
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </div>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
