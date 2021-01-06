@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Opdracht 1:
+Copy de volgende code in jouw body element:
+Hierboven zie je een input field, een button en een label.
+● Het input field kun je een getal mee invoeren.
+● De button roept de checkNumber functie aan.
+● De label wordt gebruikt om een tekst te tonen aan de hand van een logica die jij gaat
+programmeren.
+Programmeer de volgende logica in de checkNumber functie.
+● Als het ingevoerde getal is gelijk aan 3, dan toon je op het label: “Het ingevoerde
+getal is gelijk aan 3”.
+        
+Opdracht 2:
+Deze opdracht is een uitbreiding van opdracht 1.
+Programmeer de volgende logica in de checkNumber functie:
+● Als het ingevoerde getal is groter dan 4, dan toon je op het label: “Het ingevoerde
+getal is groter dan 4”.
+
+Opdracht 3:
+Deze opdracht is een uitbreiding van opdracht 1.
+Programmeer de volgende logica in de checkNumber functie:
+● Als het ingevoerde getal is gelijk aan en is groter dan 11, dan toon je op het label:
+“Het ingevoerde getal is gelijk aan 11 of groter dan 11.”.
+
+Opdracht 4:
+Deze opdracht is een uitbreiding van opdracht 1.
+Programmeer de volgende logica in de checkNumber functie:
+● Als het ingevoerde getal is kleiner dan 3, dan toon je op het label: “Het ingevoerde
+getal is kleiner dan 3”.
+
+Opdracht 5:
+We hebben nu verschillende comparison operators gehad. Wat is het verschil tussen < en <=
+? < kleiner dan; < = kleiner dan of gelijk aan
+
+Opdracht 6:
+We hebben nog een comparison operator niet gehad, namelijk ! comparison. Wat doet een !
+comparison ? Maak een voorbeeld van een ! comparison. Niet gelijk aan
+Opdracht 7:
+Wanneer je een getal hebt ingevoerd en bij de label verschijnt er een tekst, dan blijft de tekst
+voor altijd staan tenzij je de tekst van de label expliciet weghaalt. Schrijf de code van
+opdracht 1 t/m 4 zo dat als de conditie niet waar is dat de tekst van de label verwijdert
+wordt.
+Opdracht 8:
+Wat is een strict equality comparison ?-->
+
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">Bevestig</button>
+
+    <div>
+        <span id="label"></span>
+    </div>
+
+    <script>
+        function checkNumber() {
+            const cijfer = number;
+            if (cijfer.value == 3) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 3";
+            }
+            else if (cijfer.value >= 11) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 11 of groter dan 11";
+            }
+            else if (cijfer.value > 3) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is groter dan 4";
+            }
+            else if (cijfer.value < 3) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is kleiner dan 3";
+            }
+
+        }
+
+    </script>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = 5;
+            document.getElementById("demo").innerHTML = (x != 8);
+        }
+    </script>
+</body>
+
+</html>
