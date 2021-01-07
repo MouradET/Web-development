@@ -39,7 +39,7 @@ toon je op het scherm “Januari”.
                 document.getElementById("translatedMonth").innerHTML = "January";
             }
             else if (cijfer.value == 2) {
-                document.getElementById("translatedMonth").innerHTML = "February";
+                document.getElementById("translatedMonth").innerText = "February";
             }
             else if (cijfer.value == 3) {
                 document.getElementById("translatedMonth").innerHTML = "March";
@@ -71,9 +71,9 @@ toon je op het scherm “Januari”.
             else if (cijfer.value == 12) {
                 document.getElementById("translatedMonth").innerHTML = "December";
             }
-            else if (cijfer.value) {
-                document.getElementById("translatedMonth").innerHTML = "";
-            }
+            else {
+                document.getElementById("translatedMonth").innerHTML = "Geen Maand";
+            }   
         }
     </script>
 </body>
