@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Opdracht 9:
+Maak een nieuwe html bestand aan en copy de volgende code in jouw bestand. Dit is
+hetzelfde als het begin bestand van opdracht 1.:
+Programmeer de volgende logica in de checkNumber functie:
+● Als het ingevoerde getal is groter dan 5 en is kleiner dan 10, dan toon je op het label:
+“Het ingevoerde getal is tussen 5 en 10”.
+Opdracht 10:
+Deze opdracht is een uitbreiding van opdracht 7.
+Programmeer de volgende logica in de checkNumber functie:
+● Als het ingevoerde getal is gelijk aan 13 of is groter dan 13 en het ingevoerde getal is
+gelijk aan 20 of kleiner dan 20, dan toon je op het label: “Het ingevoerde getal is
+gelijk aan 11 of groter dan 11 en is gelijk aan 20 of kleiner dan 20.”.
+Opdracht 11:
+Deze opdracht is een uitbreiding van opdracht 7.
+Programmeer de volgende logica in de checkNumber functie:
+● Als het ingevoerde getal is gelijk aan 21 of het ingevoerde getal is gelijk aan 23 , dan
+toon je op het label: “Het ingevoerde getal is gelijk aan 21 of is gelijk aan 23.”.
+Opdracht 12:
+Deze opdracht is een uitbreiding van opdracht 7.
+Programmeer de volgende logica in de checkNumber functie:
+● Als het ingevoerde getal groter is dan 30 en kleiner is dan 35 of als het ingevoerde
+getal groter is dan 40 of kleiner is dan 45, toon dan op het label: “het getal is tussen
+30 en 35 of het getal is tussen 40 en 45.”-->
+
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">Button</button>
+    <div>
+        <span id="label"></span>
+    </div>
+    <script>
+        function checkNumber() {
+            // hier kun je coderen
+            const cijfer = number;
+            if (cijfer.value > 5 && cijfer.value < 10) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is tussen 5 en 10";
+            }
+            else if (cijfer.value == 21 || cijfer.value == 23) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 21 of is gelijk aan 23";
+            }
+            else if (cijfer.value > 30 && cijfer.value < 35 || cijfer.value > 40 && cijfer.value < 45 ) {
+                document.getElementById("label").innerHTML = "het getal is tussen 30 en 35 of het getal is tussen 40 en 45";
+            }
+            else if (cijfer.value) {
+                document.getElementById("label").innerHTML = "";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

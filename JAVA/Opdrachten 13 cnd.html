@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Opdracht 13:
+Maak een nieuwe html bestand aan en copy de volgende code naar jouw bestand:
+Deze applicatie moet het volgende kunnen doen:
+● Het vertalen van getallen naar maanden. Bijvoorbeeld, als je het getal 1 invoert dan
+toon je op het scherm “Januari”.
+○ 1 => January.
+○ 2 => February.
+○ 3 => March.
+○ 4 => April.
+○ 5 => May.
+○ 6 => June.
+○ 7 => Juli.
+○ 8 => August.
+○ 9 => September.
+○ 10 => Oktober.
+○ 11 => November.
+○ 12 => December.-->
+
+    <h1>Translate months</h1>
+
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</button>
+    <div id="translatedMonth"></div>
+    <script>
+        function translateMonth() {
+            // Hier kun je starten met coderen.
+            const cijfer = number;
+            if (cijfer.value == 1) {
+                document.getElementById("translatedMonth").innerHTML = "January";
+            }
+            else if (cijfer.value == 2) {
+                document.getElementById("translatedMonth").innerHTML = "February";
+            }
+            else if (cijfer.value == 3) {
+                document.getElementById("translatedMonth").innerHTML = "March";
+            }
+            else if (cijfer.value == 4) {
+                document.getElementById("translatedMonth").innerHTML = "April";
+            }
+            else if (cijfer.value == 5) {
+                document.getElementById("translatedMonth").innerHTML = "May";
+            }
+            else if (cijfer.value == 6) {
+                document.getElementById("translatedMonth").innerHTML = "June";
+            }
+            else if (cijfer.value == 7) {
+                document.getElementById("translatedMonth").innerHTML = "Juli";
+            }
+            else if (cijfer.value == 8) {
+                document.getElementById("translatedMonth").innerHTML = "August";
+            }
+            else if (cijfer.value == 9) {
+                document.getElementById("translatedMonth").innerHTML = "September";
+            }
+            else if (cijfer.value == 10) {
+                document.getElementById("translatedMonth").innerHTML = "Oktober";
+            }
+            else if (cijfer.value == 11) {
+                document.getElementById("translatedMonth").innerHTML = "November";
+            }
+            else if (cijfer.value == 12) {
+                document.getElementById("translatedMonth").innerHTML = "December";
+            }
+            else if (cijfer.value) {
+                document.getElementById("translatedMonth").innerHTML = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -50,7 +50,7 @@ voor altijd staan tenzij je de tekst van de label expliciet weghaalt. Schrijf de
 opdracht 1 t/m 4 zo dat als de conditie niet waar is dat de tekst van de label verwijdert
 wordt.
 Opdracht 8:
-Wat is een strict equality comparison ?-->
+Wat is een strict equality comparison ? Dat is een vergelijking waar 2 waardes in alle gevallen gelijk aan elkaar blijven.-->
 
     <input type="number" name="number" id="number">
     <button id="btn" onclick="checkNumber()">Bevestig</button>
@@ -68,11 +68,14 @@ Wat is een strict equality comparison ?-->
             else if (cijfer.value >= 11) {
                 document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 11 of groter dan 11";
             }
-            else if (cijfer.value > 3) {
+            else if (cijfer.value > 4) {
                 document.getElementById("label").innerHTML = "Het ingevoerde getal is groter dan 4";
             }
             else if (cijfer.value < 3) {
                 document.getElementById("label").innerHTML = "Het ingevoerde getal is kleiner dan 3";
+            }
+            else if (cijfer.value) {
+                document.getElementById("label").innerHTML = "";
             }
 
         }
