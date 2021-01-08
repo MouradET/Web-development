@@ -110,10 +110,23 @@ Zie hieronder twee voorbeelden van de applicatie:-->
         const words = ["Together", "Teamwork", "Scrum", "Individual", "Moments", "Like", "Dislike",
             "Money", "Important"];
         const guessingWord = words[Math.round(Math.random() * 8)];
-        const count = document.getElementById("count").innerHTML;
+        let teller = document.getElementById("count");
+        teller = 0;
+        
 
         function guess(obj) {
+            teller ++;
+            document.getElementById("count").innerHTML = teller;
+            if  (teller > 3){
+                document.getElementById("label").innerHTML = " Game over. The correct word is <het woord dat geraden moest worden>.";
+            }
+            else if (guessingWord == guess){
+                document.getElementById("label").innerHTML = "You have guessed the correct word!" + guessingWord;
+            }
+
         }
+        console.log(guessingWord);
+        
     </script>
 </body>
 
