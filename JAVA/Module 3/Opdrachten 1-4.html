@@ -21,10 +21,7 @@ Schrijf een functie waarbij je een getal mee kan geven aan de functie. Print ver
 getal uit in de console.
 Opdracht 4:
 Schrijf een functie die twee getallen met elkaar vermenigvuldigt en geef de waarde van de
-vermenigvuldiging terug. Geef een goede functie naam ervoor.
-Opdracht 5:
-Schrijf een functie waarbij je een naam kan meegeven aan de functie. De functie moet
-vervolgens controleren of de naam een bekende is.-->
+vermenigvuldiging terug. Geef een goede functie naam ervoor.-->
 
     <p id="answer"></p>
     <button onclick="answer()">click</button>
@@ -35,7 +32,9 @@ vervolgens controleren of de naam een bekende is.-->
             tekst("Ik ben mourad");
             getal(2);
             getal(5);
+            console.log(add(5,2));
         }
+        
         function hello (){
             console.log("hello world");
         }
@@ -45,6 +44,14 @@ vervolgens controleren of de naam een bekende is.-->
         function getal(y){
             console.log(y);
         }
+        function add(a,b){
+            return a*b;
+        }
+
+        // of op de volgende manier:
+        // function add(a,b){let ans = a*b; console.log(ans)} en in je function answer alleen a en b definieren.
+
+
        
 // Plaats hieronder alle antwoorden van de opdrachten.
     </script>
