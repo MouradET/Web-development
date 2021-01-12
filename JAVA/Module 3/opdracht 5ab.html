@@ -8,16 +8,40 @@
 </head>
 
 <body>
+
     <h1>Database namen</h1>
     <input type="text" name="text" id="text">
     <button onclick="answer()">Check</button>
     <div id="melding"></div>
 
     <script>
+
         function answer() {
+            let data = randomInputName();
+
+            switch (data) {
+                case "Mo":
+                    naamCheck = "Dit is een bekende van ons:" + " " + data;
+                    break;
+                case "Piet":
+                    naamCheck = "Dit is een bekende van ons:" + " " + data;
+                    break;
+                case "Jan":
+                    naamCheck = "Dit is een bekende van ons:" + " " + data;
+                    break;
+                case "Arash":
+                    naamCheck = "Dit is een bekende van ons:" + " " + data;
+                    break;
+                default:
+                    naamCheck = "Dit is geen bekende van ons: ";
+                    break;
+            }
+            document.getElementById("melding").innerHTML = naamCheck;
+            
+        }
+        function randomInputName() {
             let data = document.getElementById("text").value;
             const y = willekeurig();
-            //const y = willekeurig2() opdracht 6;
 
             switch (y) {
                 case 1:
@@ -48,41 +72,17 @@
                     naamCheck = "";
                     break;
             }
-            document.getElementById("melding").innerHTML = naamCheck;
+            //document.getElementById("melding").innerHTML = naamCheck;
+            return naamCheck;
 
         }
         function willekeurig() {
             let x = Math.round(Math.random() * 10);
             return x;
-            console.log(x);
+            //console.log(x);
         }
 
-        /**const willekeurig2 = () => {
-            let x = Math.round(Math.random() * 10);
-            return x;
-            } opdracht 6*/
     </script>
-
-    <!--Opdracht 7:
-Hoe geef je 2 of meer parameters mee aan een functie? Geef een voorbeeld. Binnen de haakjes , function Som (x,y)
-Wat zijn rest parameters? Geef een voorbeeld. Met rest parameters kun je meerdere arguments gebruiken zonder deze expliciet aan te geven
-binnen de function: 
-
-function sum(...theArgs) {
-  return theArgs.reduce((previous, current) => {
-    return previous + current;
-  });
-}
-
-console.log(sum(1, 2, 3));
-// expected output: 6
-
-console.log(sum(1, 2, 3, 4));
-// expected output: 10
-
-
-Wat is het verschil tussen rest parameters en expliciete parameters die je aangeeft bij een
-functie? De expliciete parameters staan vast en zullen worden gebruikt, rest parameters kun je acteraf nog declareren.-->
 </body>
 
 </html>
