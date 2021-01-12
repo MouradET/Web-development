@@ -8,34 +8,21 @@
 </head>
 
 <body>
-    <!--Schrijf een functie waarbij je een naam kan meegeven aan de functie. De functie moet
-vervolgens controleren of de naam een bekende is.
-De namen die bekend zijn:
-● John
-● Olly
-● Mo
-
-● Hendrik
-● Tony
-Als het een bekende is, dan toon je het volgende tekst op het scherm: “Dit is een bekende
-van ons: <naam die je aan de functie hebt meegegeven>”.
-Als het niet een bekende is, dan toon je het volgende tekst op het scherm “Onbekend in ons
-systeem!”-->
     <h1>Database namen</h1>
     <input type="text" name="text" id="text">
-    <button onclick="answer()">Check</button>
+    <button onclick="willekeurig()">Check</button>
     <div id="melding"></div>
 
     <script>
-   
         function answer() {
             let data = document.getElementById("text").value;
 
+            willekeurig();
             switch (data) {
-                case "Mo":
+                case 1:
                     naamCheck = "Dit is een bekende van ons:" + " " + data;
                     break;
-                case "Piet":    
+                case "Piet":
                     naamCheck = "Dit is een bekende van ons:" + " " + data;
                     break;
                 case "Jan":
@@ -49,8 +36,12 @@ systeem!”-->
                     break;
             }
             document.getElementById("melding").innerHTML = naamCheck;
+            
         }
-
+        function willekeurig() {
+            let x = Math.round(Math.random() * 10);
+            console.log(x);
+        }
     </script>
 </body>
 
