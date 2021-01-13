@@ -8,7 +8,7 @@ console.log(getallen);
 /**Opdracht 2:
 Maak een array met 5 verschillende fruitsoorten. Print de array uit in jouw console. */
 
-let fruitsoorten = ["banaan","appel","sinasappel","avocado","aardbei"];
+let fruitsoorten = ["banaan", "appel", "sinasappel", "avocado", "aardbei"];
 console.log(fruitsoorten);
 
 /**Opdracht 3:
@@ -36,7 +36,51 @@ gebruiken. Hiervoor kun je de modulo (%) gebruiken. Zoek uit hoe modulo werkt en
 toe aan de waarde van de eerste array. Als resultaat zal er altijd een fruitsoort uitgeprint
 worden. */
 
-let cijfers = getallen[Math.floor(Math.random() * getallen.length)]; 
-console.log(cijfers);
-console.log(fruitsoorten[cijfers]);
+let index = getallen[Math.floor(Math.random() * getallen.length)];
+if (index >= 5) {
+    index %= 2;
+}
+console.log(index);
+console.log(fruitsoorten[index]);
+
+/**Opdracht 6:
+Je hebt nu geleerd hoe je arrays kunt aanmaken en de waarde kunt benaderen. Arrays
+hebben ook functies die je kunt gebruiken. Zoek uit wat push(), pop(), shift(), slice(), splice(),
+sort(). Maak gebruik van de fruits array en maak voor elke functie een voorbeeld en geef in
+commentaar wat het doet. */
+
+//push voegt een index aan de array
+let push = fruitsoorten.push("framboos");
+console.log(push);
+
+//pop verwijdert de laatste waarde van een array
+let pop = fruitsoorten.pop();
+console.log(pop);
+
+//shift verwijdert de eerste waarde van een array
+let shift = fruitsoorten.shift();
+console.log(shift);
+
+//slice laat de array beginnen vanaf een bepaalde index
+let slice = fruitsoorten.slice(2);
+console.log(slice);
+
+//splice voegt een waarde toe aan de array vanaf een bepaalde index
+let splice = fruitsoorten.splice(1,0,"framboos");
+console.log(splice);
+
+//sort zorgt ervoor dat alles in de array op alfabetische volgoder wordt gezet
+let sort = ["d","k","l","y","o","a","e","p"];
+console.log(sort.sort())
+
+/**Opdracht 7:
+Naast de functies die je van de array kunt gebruiken heb je ook nog de “length” property die
+je kunt gebruiken. Hiermee kan je de grootte van de array opvragen. Gebruik de length
+property en print in de console uit hoe groot de fruits array is. */
+
+
+
+
+
+
 
