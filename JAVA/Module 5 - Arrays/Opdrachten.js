@@ -78,9 +78,19 @@ Naast de functies die je van de array kunt gebruiken heb je ook nog de “length
 je kunt gebruiken. Hiermee kan je de grootte van de array opvragen. Gebruik de length
 property en print in de console uit hoe groot de fruits array is. */
 
+let lengte = fruitsoorten.length;
+console.log(lengte);
 
+/**Opdracht 8:
+De bestaande values van de array kan je ook aanpassen. Zoek uit hoe je op een specifieke
+index de waarde kan aanpassen. Pas de value “Peer” naar “Sinaasappel”. */
 
+fruitsoorten[2] = "Peer";
+console.log(fruitsoorten);
 
+/**Opdracht 9:
+Kijkend naar de fruits array. Hoe draai je de values “Aardbei” en “Mandarijn” om in de array
+door gebruik te maken van indices (index). */
+//ik draai aardbei en avocado om
 
-
-
+[fruitsoorten[3], fruitsoorten[4]] = [fruitsoorten[4], fruitsoorten[3]];

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <div id="answer"></div>
+
+    <!--Opdracht 1:
+Maak gebruik van een loop en itereer de sports array heen. Print het 1 voor 1 uit in jouw
+console.-->
+    <!--
+Opdracht 2:
+Maak een for-loop die alleen even getallen van 0 t/m 20 in je console uitprint.-->
+
+    <script>
+        const sports
+            = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal",
+                "zwemmen", "kortbal"]
+        for (let index = 0; index < sports.length; index++) {
+            const element = sports[index];
+            console.log(element);
+        }
+
+        for (let index = 0; index <= 20; index++) {
+            if ((index % 2) == 0) {
+                console.log(index);
+            }
+        }
+    </script>
+
+<!--Opdracht 3:
+Maak gebruik van een loop en itereer door de sports array heen. Itereer de loop met even
+getallen en print de waarde in jouw console uit.-->
+
+    <script>
+        let index = 0;
+        while (index < sports.length) {
+            index++
+            const als = sports[index];
+            console.log(als);   
+        }
+    </script>
+</body>
+
+
+</html>
