@@ -19,6 +19,7 @@ Opdracht 2:
 Maak een for-loop die alleen even getallen van 0 t/m 20 in je console uitprint.-->
 
     <script>
+        console.log("Opdracht 1");
         const sports
             = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal",
                 "zwemmen", "kortbal"]
@@ -26,7 +27,7 @@ Maak een for-loop die alleen even getallen van 0 t/m 20 in je console uitprint.-
             const element = sports[index];
             console.log(element);
         }
-
+        console.log("Opdracht 2");
         for (let index = 0; index <= 20; index++) {
             if ((index % 2) == 0) {
                 console.log(index);
@@ -34,16 +35,29 @@ Maak een for-loop die alleen even getallen van 0 t/m 20 in je console uitprint.-
         }
     </script>
 
-<!--Opdracht 3:
+    <!--Opdracht 3:
 Maak gebruik van een loop en itereer door de sports array heen. Itereer de loop met even
 getallen en print de waarde in jouw console uit.-->
 
     <script>
-        let index = 0;
-        while (index < sports.length) {
-            index++
-            const als = sports[index];
-            console.log(als);   
+        console.log("Opdracht 4");
+        const sport
+            = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal",
+                "zwemmen", "kortbal"]
+        let ind = 0;
+        while (ind < sport.length) {
+            ind++
+            const als = sport[ind];
+            console.log(als);
+           
+        }
+        let i = 0;
+        console.log("opdracht 5");
+        while (i <= 20) {
+            i++;
+            if ((i % 2) == 0) {
+                console.log(i);
+            }
         }
     </script>
 </body>
