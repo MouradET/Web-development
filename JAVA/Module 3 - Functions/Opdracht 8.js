@@ -1,9 +1,13 @@
 //document.getElementById("tabelNL").style.backgroundColor = "red";
 
-var td = document.getElementById('td');
-if (td.innerHTML < 5.5)
-    td.style.backgroundColor = 'red';
-else if (td.innerHTML >= 5.5)
-    td.style.backgroundColor = 'green';
-else if (td.innerHTML >= 7.5)
-    td.style.backgroundColor = 'blue';
+var grade = document.getElementsByClassName("grade");
+
+    if (grade[0].innerHTML < 5.5) {
+        grade[0].style.backgroundColor = 'red';
+    } else if(grade.innerHTML >= 5.5){
+        grade.style.backgroundColor = 'green';
+    }
+    console.log(grade);    
+
+  
+    
