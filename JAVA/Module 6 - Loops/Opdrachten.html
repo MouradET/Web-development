@@ -116,13 +116,40 @@ uitgeprint wordt-->
                     console.log(dave);
                 }
             }
+            
             else if (indexx == 2) {
                 for (let urvin = 1; urvin <= 20; urvin++) {
-                    if (urvin % 2 == 0);
-                    console.log(urvin);
+                    if (urvin % 2 == 0) {
+                        console.log(urvin);
+                    }
                 }
-            } 
+            }
+            else if (indexx == 3) {
+                for (let sharon = 3; sharon <= 30; sharon+= 3) {
+                    console.log(sharon);
+                }
+            }
             indexx++;
+        }
+    </script>
+
+    <!--Opdracht 8:
+Maak een for loop die van 0 t/m 50 itereert. Een hele bekende oefening is de fibonacci
+reeks. Lees je in hoe fibonacci reeks werkt: https://www.fibonicci.com/nl/rij-van-fibonacci/.
+Neem zelf eerst de tijd om dit uit te coderen, want op internet staat letterlijk het antwoord.
+Het gaat hier om het aanleren van bepaalde denkwijze om dit op te lossen. Maak hiervoor
+een stappenplan en werkt dit uit in code.-->
+
+    <script>
+        console.log("Opdracht 8")
+        let i;
+        let fibo = [];
+
+        fibo[0] = 0;
+        fibo[1] = 1;
+        for (let i = 2; i <= 10; i++) {
+            fibo[i] = fibo[i-2] + fibo[i-1];
+            console.log(fibo[i]);
         }
     </script>
 
