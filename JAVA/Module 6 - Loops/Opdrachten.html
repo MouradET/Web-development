@@ -41,6 +41,18 @@ getallen en print de waarde in jouw console uit.-->
 
     <script>
 
+        console.log("Opdracht 3");
+        const sportss
+            = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal",
+                "zwemmen", "kortbal"]
+        for (let ind = 0; ind < sportss.length; ind++) {
+            const elements = sportss[ind];
+            if ((ind % 2) == 0) {
+                //console.log(ind);
+                console.log(elements);
+            }
+        }
+
     </script>
 
     <!--Opdracht 4:
@@ -83,6 +95,37 @@ Maak opdracht 1, maar maak nu gebruik van een for...of loop.-->
             console.log(iterator);
         }
     </script>
+
+    <!--Opdracht 7:
+● Maak een while loop die 3x itereert
+● Binnen de while loop maak je een for-loop die 10x itereert
+● Bij de eerste while iteratie wil ik dat de getallen 1,2,3,4,5,6,7,8,9,10 in je console
+uitgeprint wordt
+● Bij de tweede while iteratie wil ik dat de getallen 2,4,6,8,10,12,14,16,18,20 in je
+console uitgeprint wordt
+● Bij de derde while iteratie wil ik dat de getallen 3,6,9,12,15,18,21,24,27,30 in je console
+uitgeprint wordt-->
+
+    <script>
+        console.log("Opdracht 7");
+        let indexx = 1;
+        while (indexx < 4) {
+            console.log(indexx);
+            if (indexx == 1) {
+                for (let dave = 1; dave <= 10; dave++) {
+                    console.log(dave);
+                }
+            }
+            else if (indexx == 2) {
+                for (let urvin = 1; urvin <= 20; urvin++) {
+                    if (urvin % 2 == 0);
+                    console.log(urvin);
+                }
+            } 
+            indexx++;
+        }
+    </script>
+
 </body>
 
 </html>
