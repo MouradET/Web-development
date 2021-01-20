@@ -155,6 +155,24 @@ een stappenplan en werkt dit uit in code.-->
         }
     </script>
 
+    <script>
+        console.log("================")
+        let a = 1;
+        let b = 0;
+        let c = a + b;
+
+        for (let index = 0; index <= 50; index++) {
+           c = a + b;
+           
+           a = b;
+           b = c;
+           c = a + b;
+           
+           console.log(c);
+            
+        }
+    </script>
+
 </body>
 
 </html>

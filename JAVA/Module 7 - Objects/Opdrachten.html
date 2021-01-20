@@ -11,19 +11,47 @@
 
     <div id="clubs" class="clubs"></div>
 
-    <!--Opdracht 1:
+    <script>
+        /*Opdracht 1:
 Maak een Object die club informatie bijhoudt:
 ● Naam van de club
 ● Type sport
-● Aantal leden-->
-
-    <script>
-        let club = {
-            name: "Real Madrid",
-            sport: "Voetbal",
-            members: 1000000
+● Aantal leden**/
+        const club = function (name, sport, members) {
+            this.name = name;
+            this.sport = sport;
+            this.members = members;
         }
         console.log(club);
+
+        /*Opdracht 2:
+Maak een Object van contactgegevens en voeg dat ook toe aan de club object:
+● Contactgegevens
+○ Adres
+○ Telefoonnr
+○ Contactpersoon**/
+        const contactGegevens = function (adres, telefoonNr, contactPersoon) {
+            this.adres = adres;
+            this.telefoonNr = telefoonNr;
+            this.contactPersoon = contactPersoon;
+        }
+        console.log(contactGegevens);
+
+        const clubs = function (name, sport, members, contactGegevens) {
+            this.name = name;
+            this.sport = sport;
+            this.members = members;
+            this.contactGegevens = new contactGegevens(contactGegevens);        }
+        
+        console.log(clubs);
+
+        /*Opdracht 3:
+Het is heel gebruikelijk dat dezelfde objecten in een lijst staan. Maak een lijst aan en voeg 4
+Club objecten toe aan de lijst. Itereer over de lijst heen en print de verschillende clubnamen
+uit op jouw pagina.**/
+
+        madrid = new club("Real Madrid", "Voetbal", 1000000, "Calle de Madrid 1");
+        console.log(madrid);
     </script>
 </body>
 
