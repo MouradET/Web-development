@@ -37,12 +37,13 @@ Maak een Object van contactgegevens en voeg dat ook toe aan de club object:
         }
         console.log(contactGegevens);
 
-        const clubs = function (name, sport, members, contactGegevens) {
+        const clubs = function (name, sport, members, adres, telefoonNr, contactPersoon) {
             this.name = name;
             this.sport = sport;
             this.members = members;
-            this.contactGegevens = new contactGegevens(contactGegevens);        }
-        
+            this.contactGegevens = new contactGegevens(adres, telefoonNr, contactPersoon);
+        }
+
         console.log(clubs);
 
         /*Opdracht 3:
@@ -52,6 +53,63 @@ uit op jouw pagina.**/
 
         madrid = new club("Real Madrid", "Voetbal", 1000000, "Calle de Madrid 1");
         console.log(madrid);
+
+        /*Opdracht 4:
+Gegeven deze code:
+Sorteer persons op leeftijd van klein naar groot.**/
+
+        const Person = function (name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        const persons = [
+            new Person("Jan", 24),
+            new Person("Klaas", 15),
+            new Person("Yanis", 42),
+            new Person("Rupel", 55),
+            new Person("Hendrik", 32),
+            new Person("Mono", 28),
+            new Person("West", 23),
+        ]
+
+        persons.sort((a, b) => {
+            return a.age - b.age;
+        });
+
+        console.log(persons);
+
+        /*Opdracht 5:
+Maak nu een Person object door gebruik te maken van Object initializers. Wat zou eventueel
+de voor en nadelen t.o.v Object constructors?**/
+
+            /*Jan = { name: "Jan", age: 24 };
+            Klaas = { name: "Klaas", age: 15 };
+            Yanis = { name: "Yanis", age: 42 };
+            Rupel = { name: "Rupel", age: 55 };
+            Hendrik = { name: "Hendrik", age: 32 };
+            Mono = { name: "Mono", age: 28 };
+            West = { name: "West", age: 23 };
+
+            /*Opdracht 6:
+De nieuwe manier van objecten creëren kan je ook gebruik maken van classes. Lees je in
+over classes: Zet opdracht 4 om in classes i.p.v object constructors.**/
+
+        class personen{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+        }
+        const Jan = new personen("Jan", 24);
+        const Klaas = new personen("Klaas", 15);
+        const Yanis = new personen("Yanis", 42);
+        const Rupel = new personen("Rupel", 55);
+        const Hendrik = new personen("Hendrik", 32);
+        const Mono = new personen("Mono", 28);
+        const West = new personen("West", 23);
+
+        console.log(personen);  
+
     </script>
 </body>
 
