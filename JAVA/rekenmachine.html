@@ -20,7 +20,9 @@
         border-radius: 25px 25px 0 0;
         color: white;
         font-size: 50px;
-        text-align: end;
+        display: flex;
+        justify-content: flex-end;
+    
     }
     button{
         border-radius: 50%;
@@ -52,7 +54,7 @@
 <body>
     <div class="rekenmachine">
         <div id="inputfield">0</div>
-        <button id="AC">AC</button><button onclick="input(this)" id="plusmin">+/-</button><button onclick="input(this)" id="procent">%</button><button class="bewerking" id="delen">/</button>
+        <button onclick="reset()" id="AC">AC</button><button onclick="input(this)" id="plusmin">+/-</button><button onclick="input(this)" id="procent">%</button><button class="bewerking" id="delen">/</button>
         <button onclick="input(this)" class="cijfers" id="zeven">7</button><button onclick="input(this)" class="cijfers" id="acht">8</button><button onclick="input(this)" class="cijfers" id="negen">9</button><button class="bewerking" id="keer">x</button>
         <button onclick="input(this)" class="cijfers" id="vier">4</button><button onclick="input(this)" class="cijfers" id="vijf">5</button><button onclick="input(this)" class="cijfers" id="zes">6</button><button class="bewerking" id="min">-</button>
         <button onclick="input(this)" class="cijfers" id="een">1</button><button onclick="input(this)" class="cijfers" id="twee">2</button><button onclick="input(this)" class="cijfers" id="drie">3</button><button class="bewerking" id="plus">+</button>
@@ -62,9 +64,18 @@
     <script>
         //hiermee krijg je input op beeld
         function input(waarde){
-            document.getElementById("inputfield").innerText = waarde.innerText;
+            document.getElementById("inputfield").innerText += waarde.innerText;
+            //document.getElementById("inputfield").innerText = waarde.innerText;
             console.log(waarde);
         }
+
+        //hiermee reset je de rekenmachine naar 0
+        function reset(){
+            document.getElementById("inputfield").innerText = 0;
+            console.log(reset);
+        }
+
+
     </script>
 </body>
 </html>
