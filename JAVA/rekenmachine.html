@@ -49,16 +49,20 @@
         width: 145px;
         border-radius:50px 50px 50px 50px;
     }
+
+    .bewerking:active{
+        background-color: green;
+    }
     
 </style>
 <body>
     <div class="rekenmachine">
         <div id="inputfield">0</div>
-        <button onclick="reset()" id="AC">AC</button><button onclick="negatief()" id="plusmin">+/-</button><button onclick="input(this)" id="procent">%</button><button onclick="input(this)" class="bewerking" id="delen">/</button>
+        <button onclick="reset()" id="AC">AC</button><button onclick="negatief()" id="plusmin">+/-</button><button onclick="modulo()" id="procent">%</button><button onclick="input(this)" class="bewerking" id="delen">/</button>
         <button onclick="input(this)" class="cijfers" id="zeven">7</button><button onclick="input(this)" class="cijfers" id="acht">8</button><button onclick="input(this)" class="cijfers" id="negen">9</button><button onclick="input(this)" class="bewerking" id="keer">*</button>
         <button onclick="input(this)" class="cijfers" id="vier">4</button><button onclick="input(this)" class="cijfers" id="vijf">5</button><button onclick="input(this)" class="cijfers" id="zes">6</button><button onclick="input(this)" class="bewerking" id="min">-</button>
         <button onclick="input(this)" class="cijfers" id="een">1</button><button onclick="input(this)" class="cijfers" id="twee">2</button><button onclick="input(this)" class="cijfers" id="drie">3</button><button onclick="input(this)" class="bewerking" id="plus">+</button>
-        <button onclick="input(this)" class="cijfers" id="nul">0</button><button onclick="input(this)" class="cijfers" id="komma">,</button><button onclick="rekenen()" class="bewerking" id="is">=</button>
+        <button onclick="input(this)" class="cijfers" id="nul">0</button><button onclick="input(this)" class="cijfers" id="komma">.</button><button onclick="rekenen()" class="bewerking" id="is">=</button>
     </div>
 
     <script>
@@ -67,20 +71,30 @@
 
         //hiermee krijg je input op beeld
         function input(waarde){
+            //hiermee wordt het scherm geleegd als er gedrukt wordt
+            if (display.innerText == 0) {
+                display.innerText = null;
+            }
             display.innerText += waarde.innerHTML;
             console.log(waarde.innerHTML);
         }
 
+        //hiermee werkt de +/- knop
         function negatief() {
             display.innerText *= -1;
             console.log(negatief.innerHTML);
-            
+        }
+
+        //hiermee werkt modulo
+        function modulo() {
+            display.innerText %= display.innerText;
+            console.log(modulo.innerHTML);
         }
 
         //hiermee voer je een berekening uit na het drukken op '='
         function rekenen (){
-            display.innerText = eval(display.innerText)
-            
+            let number = eval(display.innerText);
+            display.innerText = number.toFixed(2);
             console.log(eval(display.innerText));
         }
 
