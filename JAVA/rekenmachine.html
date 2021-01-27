@@ -21,7 +21,7 @@
         color: white;
         font-size: 50px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-end;  
     
     }
     button{
@@ -54,25 +54,40 @@
 <body>
     <div class="rekenmachine">
         <div id="inputfield">0</div>
-        <button onclick="reset()" id="AC">AC</button><button onclick="input(this)" id="plusmin">+/-</button><button onclick="input(this)" id="procent">%</button><button class="bewerking" id="delen">/</button>
-        <button onclick="input(this)" class="cijfers" id="zeven">7</button><button onclick="input(this)" class="cijfers" id="acht">8</button><button onclick="input(this)" class="cijfers" id="negen">9</button><button class="bewerking" id="keer">x</button>
-        <button onclick="input(this)" class="cijfers" id="vier">4</button><button onclick="input(this)" class="cijfers" id="vijf">5</button><button onclick="input(this)" class="cijfers" id="zes">6</button><button class="bewerking" id="min">-</button>
-        <button onclick="input(this)" class="cijfers" id="een">1</button><button onclick="input(this)" class="cijfers" id="twee">2</button><button onclick="input(this)" class="cijfers" id="drie">3</button><button class="bewerking" id="plus">+</button>
-        <button onclick="input(this)" class="cijfers" id="nul">0</button><button onclick="input(this)" class="cijfers" id="komma">,</button><button class="bewerking" id="is">=</button>
+        <button onclick="reset()" id="AC">AC</button><button onclick="negatief()" id="plusmin">+/-</button><button onclick="input(this)" id="procent">%</button><button onclick="input(this)" class="bewerking" id="delen">/</button>
+        <button onclick="input(this)" class="cijfers" id="zeven">7</button><button onclick="input(this)" class="cijfers" id="acht">8</button><button onclick="input(this)" class="cijfers" id="negen">9</button><button onclick="input(this)" class="bewerking" id="keer">*</button>
+        <button onclick="input(this)" class="cijfers" id="vier">4</button><button onclick="input(this)" class="cijfers" id="vijf">5</button><button onclick="input(this)" class="cijfers" id="zes">6</button><button onclick="input(this)" class="bewerking" id="min">-</button>
+        <button onclick="input(this)" class="cijfers" id="een">1</button><button onclick="input(this)" class="cijfers" id="twee">2</button><button onclick="input(this)" class="cijfers" id="drie">3</button><button onclick="input(this)" class="bewerking" id="plus">+</button>
+        <button onclick="input(this)" class="cijfers" id="nul">0</button><button onclick="input(this)" class="cijfers" id="komma">,</button><button onclick="rekenen()" class="bewerking" id="is">=</button>
     </div>
 
     <script>
+
+        let display = document.getElementById("inputfield");
+
         //hiermee krijg je input op beeld
         function input(waarde){
-            document.getElementById("inputfield").innerText += waarde.innerText;
-            //document.getElementById("inputfield").innerText = waarde.innerText;
-            console.log(waarde);
+            display.innerText += waarde.innerHTML;
+            console.log(waarde.innerHTML);
+        }
+
+        function negatief() {
+            display.innerText *= -1;
+            console.log(negatief.innerHTML);
+            
+        }
+
+        //hiermee voer je een berekening uit na het drukken op '='
+        function rekenen (){
+            display.innerText = eval(display.innerText)
+            
+            console.log(eval(display.innerText));
         }
 
         //hiermee reset je de rekenmachine naar 0
         function reset(){
-            document.getElementById("inputfield").innerText = 0;
-            console.log(reset);
+            display.innerText = 0;
+            console.log(display.innerText);
         }
 
 
