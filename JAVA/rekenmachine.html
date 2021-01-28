@@ -58,7 +58,7 @@
 <body>
     <div class="rekenmachine">
         <div id="inputfield">0</div>
-        <button onclick="reset()" id="AC">AC</button><button onclick="negatief()" id="plusmin">+/-</button><button onclick="modulo()" id="procent">%</button><button onclick="input(this)" class="bewerking" id="delen">/</button>
+        <button onclick="reset()" id="AC">AC</button><button onclick="negatief()" id="plusmin">+/-</button><button onclick="input(this)" id="procent">%</button><button onclick="input(this)" class="bewerking" id="delen">/</button>
         <button onclick="input(this)" class="cijfers" id="zeven">7</button><button onclick="input(this)" class="cijfers" id="acht">8</button><button onclick="input(this)" class="cijfers" id="negen">9</button><button onclick="input(this)" class="bewerking" id="keer">*</button>
         <button onclick="input(this)" class="cijfers" id="vier">4</button><button onclick="input(this)" class="cijfers" id="vijf">5</button><button onclick="input(this)" class="cijfers" id="zes">6</button><button onclick="input(this)" class="bewerking" id="min">-</button>
         <button onclick="input(this)" class="cijfers" id="een">1</button><button onclick="input(this)" class="cijfers" id="twee">2</button><button onclick="input(this)" class="cijfers" id="drie">3</button><button onclick="input(this)" class="bewerking" id="plus">+</button>
@@ -68,13 +68,19 @@
     <script>
 
         let display = document.getElementById("inputfield");
+        let ac = document.getElementById("AC");
 
-        //hiermee krijg je input op beeld
+       
         function input(waarde){
             //hiermee wordt het scherm geleegd als er gedrukt wordt
             if (display.innerText == 0) {
                 display.innerText = null;
             }
+            //hiermee verandert AC naar C
+            else if(display.innerText !== 0){
+                ac.innerText = "C";
+            }
+            //hiermee krijg je input op beeld
             display.innerText += waarde.innerHTML;
             console.log(waarde.innerHTML);
         }
@@ -85,12 +91,6 @@
             console.log(negatief.innerHTML);
         }
 
-        //hiermee werkt modulo
-        function modulo() {
-            display.innerText %= display.innerText;
-            console.log(modulo.innerHTML);
-        }
-
         //hiermee voer je een berekening uit na het drukken op '='
         function rekenen (){
             let number = eval(display.innerText);
@@ -98,13 +98,12 @@
             console.log(eval(display.innerText));
         }
 
-        //hiermee reset je de rekenmachine naar 0
+        //hiermee reset je de rekenmachine naar 0 en wordt ac getoond ipv C
         function reset(){
             display.innerText = 0;
+            ac.innerText = "AC";
             console.log(display.innerText);
         }
-
-
     </script>
 </body>
 </html>
