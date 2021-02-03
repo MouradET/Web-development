@@ -102,6 +102,8 @@ li a:hover {
 
 h1 {
     text-align: center;
+    background-color: slategrey;
+    border-top: white 3px solid;
 }
 
 /*styling main div*/
@@ -114,6 +116,7 @@ h1 {
     justify-content: space-evenly;
     align-items: baseline;
     text-align: center;
+    background-color: slategrey;
 }
 
 /* styling projecten */
@@ -123,6 +126,7 @@ h1 {
     height: 150px;
     transition: .5s ease;
     backface-visibility: hidden;
+    background-color: slategrey;
 }
 
 .projects {
@@ -130,6 +134,8 @@ h1 {
     background-color: white;
     margin: auto;
     position: relative;
+    padding: 0;
+    background-color: slategrey;
 }
 
 .projects:hover .projectsfoto {
@@ -147,6 +153,7 @@ h1 {
     height: 80vh;
     background-color: slategrey;
     background-size: cover;
+    border-top: white 3px solid;
 }
 
 input:focus~label, textarea:focus~label, input:valid~label, textarea:valid~label {
