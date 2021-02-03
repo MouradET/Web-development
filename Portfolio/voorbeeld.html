@@ -1,65 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    .container {
-      position: relative;
-      display: block;
-      margin: auto;
-      width: 50%;
-    }
-    
-    .image {
-      opacity: 1;
-      display: block;
-      width: 250px;
-      height: 250px;
-      transition: .5s ease;
-      backface-visibility: hidden;
-    }
-    
-    .middle {
-      transition: .5s ease;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 125px;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    
-    .container:hover .image {
-      opacity: 0.3;
-    }
-    
-    .container:hover .middle {
-      opacity: 1;
-    }
-    
-    .text {
-      background-color: #378eb6;
-      color: white;
-      font-size: 16px;
-      padding: 16px 32px;
-    }
-    </style>
+.container {
+  position: relative;
+  width: 50%;
+}
 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
 <body>
-    <h2>Opacity with Box</h2>
-    <p>Hover over the image to see the effect.</p>
 
-    <div class="container">
-        <img src="./kim.jfif" alt="Avatar" class="image">
-        <div class="middle">
-            <div class="text">John Doe</div>
-        </div>
-    </div>
+<h2>Opacity with Box</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="./john-schnobrich-WS7tgu261f0-unsplash.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>
+  
 </body>
-
 </html>
