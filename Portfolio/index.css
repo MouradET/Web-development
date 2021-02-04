@@ -72,7 +72,7 @@ li a:hover {
 
 /* styling button op foto */
 
-.button {
+.info {
     transition: 1s ease;
     opacity: 0;
     position: absolute;
@@ -87,7 +87,7 @@ li a:hover {
     opacity: 0.8;
 }
 
-.card:hover .button {
+.card:hover .info {
     opacity: 1;
 }
 
@@ -142,7 +142,7 @@ h1 {
     opacity: 0.3;
   }
   
-  .projects:hover .button {
+  .projects:hover .info {
     opacity: 1;
   }
 
